@@ -1,2 +1,2 @@
 # FE-Assessment
-A simple React.js app
+A simple React.js app.
