@@ -1,0 +1,28 @@
+.details-page-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.details-section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.detail-row strong {
+  width: 120px;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.detail-row p {
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 1rem;
+  opacity: 1;
+}
+
+.list-item-container.fade-out {
+  transition-property: all;
+  transition-duration: 0.8s;
+  opacity: 0;
+  transform: translateY(-200%);
+}
+
+.item-name {
+  min-height: 7rem;
+  font-weight: bold;
+  cursor: help;
+}
+
+.delete-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f14a5b;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}

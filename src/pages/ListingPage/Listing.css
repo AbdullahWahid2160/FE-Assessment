@@ -1,0 +1,39 @@
+.listing-page-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.listing-section-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.search-input {
+  background-color: rgb(230, 229, 229);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.sort-btn {
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
