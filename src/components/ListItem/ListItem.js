@@ -19,7 +19,10 @@ const ListItem = ({ item, onDelete }) => {
   };
 
   return (
-    <div className={`list-item-container ${isDeleting ? "fade-out" : ""}`}>
+    <div
+      className={`list-item-container ${isDeleting ? "fade-out" : ""}`}
+      data-testid="Test Item"
+    >
       <span className="item-name" onClick={() => handleItemClick(item)}>
         {item.name}
       </span>

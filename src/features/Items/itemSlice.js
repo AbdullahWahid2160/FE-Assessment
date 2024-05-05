@@ -42,7 +42,7 @@ const itemListSlice = createSlice({
         item.name.toLowerCase().includes(state.searchTerm.toLowerCase())
       );
     },
-    sortedItems(state, action) {
+    sortedItems(state) {
       state.sorted = !state.sorted;
       state.filteredItems = state.filteredItems.sort((a, b) => {
         return state.sorted
@@ -60,7 +60,7 @@ const itemListSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchItemsAsync.pending, (state, action) => {
+    builder.addCase(fetchItemsAsync.pending, (state) => {
       state.loading = true;
     });
     builder.addCase(fetchItemsAsync.fulfilled, (state, action) => {
